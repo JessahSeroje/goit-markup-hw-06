@@ -444,8 +444,7 @@ body {
 }
 
 /* Customers */
-.customers {
-}
+
 .partners {
   display: flex;
   align-items: center;
@@ -694,6 +693,8 @@ body {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 72px 24px 34px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -757,7 +758,8 @@ body {
   text-align: center;
 
   color: var(--navy-blue);
-  margin: 72px 24px 34px 24px;
+  /* margin: 72px 24px 34px 24px; */
+  margin-bottom: 30px;
 }
 .form {
   display: block;
@@ -774,12 +776,12 @@ body {
   display: block;
   position: relative;
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 24px;
+  /* margin-left: 24px;
+  margin-right: 24px; */
   margin-top: 8px;
 }
 .field:not(:last-child) {
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
   /* margin-bottom: 26px; */
 }
 
@@ -800,7 +802,7 @@ body {
 .input,
 .textarea {
   width: 100%;
-  margin: 0 0 8px 0;
+  /* margin: 0 0 8px 0; */
   padding: 11px 16px 11px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -821,12 +823,16 @@ body {
   outline: none;
   border-color: var(--iris);
 }
+.input {
+  margin-bottom: 26px;
+}
 
 .textarea {
   height: 120px;
   flex-shrink: 0;
   resize: none;
   padding-left: 12px;
+  margin-bottom: 16px;
 }
 .textarea::placeholder {
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
@@ -837,7 +843,7 @@ body {
 .formicon {
   position: absolute;
   left: 16px;
-  top: 40%;
+  top: 35%;
 
   transform: translateY(-50%);
   fill: currentColor;
@@ -851,14 +857,15 @@ body {
 .agreement {
   position: relative;
   display: flex;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
   top: 0;
   left: 0;
 
-  margin: 0 0 24px 22px;
+  /* margin: 0 0 24px 22px; */
+  margin-bottom: 26px;
 
   font-size: 12px;
   font-weight: 400;
@@ -900,7 +907,7 @@ body {
   display: block;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 
   color: var(--white);
   background-color: var(--iris);
